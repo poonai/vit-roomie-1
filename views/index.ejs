@@ -1,0 +1,104 @@
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href=http://fonts.googleapis.com/icon?family=Material+Icons rel=stylesheet>
+      <!--Import materialize.css-->
+      <link type=text/css rel=stylesheet href=stylesheets/css/materialize.min.css  media=screen,projection/>
+
+      <meta name=viewport content=width=device-width, initial-scale=1.0>
+    </head>
+
+    <body>
+      <script type=text/javascript src=https://code.jquery.com/jquery-2.1.1.min.js></script>
+      <script type=text/javascript src=javascripts/js/materialize.min.js>
+</script>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo" style=margin-left:50px;>    Finding Roomie VIT 101</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href=mendetails>Men</a></li>
+        <li><a href=womendetails>Women</a></li>
+      </ul>
+    </div>
+  </nav>
+<form method=POST action=post-details style=margin-left:150px;>
+ 
+<div class=“row”>
+<div class="row">
+       <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate" name=name required>
+          <label for="last_name">Name</label>
+        </div>
+</div>
+<div class="row">
+<div class="input-field col s6">
+          <input id="last_name" type="text" class="validate" name=registerno required>
+          <label for="last_name">Register No</label>
+        </div>
+</div>
+<div class=“row” style=margin-left:10px;>
+
+<p> Choose your gender : </p>
+
+ <p>
+      <input name=gender type="radio" id="test1" value=male />
+      <label for="test1">Male</label>
+    </p>
+    <p>
+      <input name=gender type="radio" id="test2" value=female />
+      <label for="test2">Female</label>
+    </p>
+</div>
+
+<div class="row">
+
+<div class="input-field col s6">
+          <input id="last_name" type="text" class="validate" name=branch required>
+          <label for="last_name">Branch</label>
+        </div>
+</div>
+</div>
+
+
+
+
+<div class="row">
+
+<div class="input-field col s6">
+          <input id="last_name" type="text" class="validate" name=cgpa>
+          <label for="last_name">CGPA (Optional)</label>
+        </div>
+</div>
+</div>
+<div class="row">
+        <div class="input-field col s6">
+          <textarea id="textarea1" class="materialize-textarea" name=requirements></textarea>
+          <label for="textarea1">Requirements if any</label>
+        </div>
+      </div>
+<div class="row">
+
+<div class="input-field col s6">
+          <input id="last_name" type="text" class="validate" name=phone required>
+          <label for="last_name">Phone Number</label>
+        </div>
+</div>
+</div>
+<div class="row">
+<button class="btn waves-effect waves-light" type="submit" name="action" style= position:relative;
+   top: 50%;
+   transform: translateY(-50%);>Submit
+<i class="mdi-content-send right"></i>
+</button>
+
+</div>
+<%= response%>
+
+
+
+</form>
+
+ 
+
+</body>
+</html>
